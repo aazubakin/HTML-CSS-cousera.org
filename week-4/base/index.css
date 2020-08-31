@@ -1,4 +1,12 @@
 /*Ссылка на шрифты кроме основного 'https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700'*/
+@font-face 
+{
+    font-family: "Chomsky";
+    src: url("Chomsky/chomsky-webfont.woff") format("woff"),
+         url("Chomsky/chomsky-webfont.woff2") format("woff2"),
+         local("Chomsky"); 
+
+}
 body
 {
     width: 1200px;
@@ -61,8 +69,9 @@ body
     font-weight: bold;
     text-align: center;
     margin: 0;
-    font-family: 'Tangerine', serif;
-    font-size: 120px;
+	
+    font-family: "Chomsky", sans-serif;
+    font-size: 80px;
     text-shadow: 4px 4px 4px #aaa;
 }
 

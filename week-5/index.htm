@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>animation train</title>
+   <style>
+      div {
+         width: 150px;
+         height: 150px;
+         background-color: #f00;
+         transition: background-color .5s linear;
+         animation: moving 3s linear forwards;
+         animation-iteration-count: 1;
+      }
+
+      @keyframes moving {
+         25% {
+            transform: translateX(100px);
+         }
+
+         50% {
+            transform: translateX(100px) translateY(150px);
+         }
+
+         100% {
+            transform: translate(100px, 150px) scale(2) rotate(145deg);
+         }
+      }
+
+      div:hover {
+         background-color: #ff0;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="animation">
+   </div>
+</body>
+
+</html>
